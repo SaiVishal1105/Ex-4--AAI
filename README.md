@@ -2,6 +2,7 @@
 <H3>ENTER YOUR REGISTER NO.: 212223230180</H3>
 <H3>EX. NO.4</H3>
 <H3>DATE: 19-09-24</H3>
+
 ## Aim: 
 Construct a Python code to find the sequence of hidden states by the known sequence of observances using Hidden Markov Model. Consider two hidden states Sunny and Rainy with observable states,happy and sad.
 
