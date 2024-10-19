@@ -40,7 +40,8 @@ alpha [0,:] = initial_probabilities *emission_matrix[:, observed_sequence [0]]
 # Loop through the rest of the observed sequence and calculate the rest of the alpha matrix
 for t in range (1, len (observed_sequence) ) :
   for j in range (len (initial_probabilities) ) :
-    alpha[t,j]= emission_matrix [j,observed_sequence[t]] *np.sum(alpha[t-1:]*transition_matrix[:, j])
+    alpha[t,j]= emission_matrix [j,observed_sequence[t]] *np.sum(alpha[t-1:]*
+transition_matrix[:, j])
 
 # Calculate the probability of the observed sequence
 probability = np.sum(alpha[-1,:])
@@ -54,12 +55,12 @@ for t in range (len (observed_sequence)):
   else:
     most_likely_sequence.append ("rainy")
 print("The most likely sequence of Weather States is",most_likely_sequence)
-```
 
+```
 ## Output:
 
 ![366778109-dfcabb42-1c04-48c7-8824-6d7a00e091e8](https://github.com/user-attachments/assets/d671e78c-96c5-4a67-b2b9-cea9d89b3e7a)
 
 ## Result:
-Thus Hidden Markov Model is implemented using python.
+Thus Hidden Markov Model is implemented using python.
 
